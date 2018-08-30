@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Макет сайта</title>
+	<script src="js/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	<style>
+		/* BODY */
+		body {
+			margin: 0;
+			border: 0;
+			background-color: #ffffff;
+		}
+		/* BODY */
+
+
+		/* HEADER */
+		header {
+			/*position: fixed;*/
+			top: 0px; 
+			width: 100%;
+			min-height: 60px; 
+			background-color: #fad900;
+			padding: 10px 0px;
+			clear: both;
+			box-shadow: 0 0 0 rgba(0, 0, 0, 1);
+			z-index: 100;
+		}
+
+		.header-left {
+			float: left;
+		}
+
+		.header-right {
+			float: right;
+		}
+
+		.header img {
+			height: 50px;
+			width: 306px;
+			margin: 2px 0px 0px 10px;
+		}
+
+		#header-right-button {
+			font-size: 16px;
+			font-family: "Helvetica Neue", "Open Sans", sans-serif;
+			font-weight: 300;
+			margin: 8px 10px 0px 0px;
+			background-color: #54b42d;
+			color: white;
+			cursor: pointer;
+			/*box-shadow: 0 0 12px rgba(0,0,0,0.2);*/
+			border: 0px solid black;
+			border-radius: 10px;
+			text-decoration: none;
+			text-align: center;
+			padding: 12px;
+			padding-left: 50px;
+			padding-right: 50px;
+			display: block;
+		}
+		/* HEADER 
+
+
+		/* SCREEN 1 */
+		.screen1,
+		.screen11 {
+			width: 100%;
+			min-height: 610px;
+			clear: both;
+			margin: 0px 0px -50px 0px;
+			padding-top: 30px;
+			/*background-image: 
+				linear-gradient(45deg, rgba(0, 0, 0, 0.015) 25px, transparent 25px);*/
+			background-repeat: repeat;
+			background-size: 60px 60px;
+			background-position: 
+				0 0;
+		}
+
+		.screen11 {
+			min-height: 630px;
+			margin-top: 0;
+			padding-top: 30px;
+		}
+
+		.screen1-left,
+		.screen11-left {
+			width: 490px;
+			float: left;
+		}
+
+		.screen1-right,
+		.screen11-right {
+			width: 700px;
+			float: right;
+			margin-top: 30px;
+		}
+
+		.screen1 img,
+		.screen11 img {
+			position: relative;
+			bottom: -4px;
+			margin-top: 10px;
+			margin-left: 150px;
+		}
+
+		.screen11 img {
+			margin-top: 30px;
+			bottom: 0px;
+		}
+
+		h1,
+		.screen11 h2 {
+			margin-top: 45px;
+			font-family: "Helvetica Neue", "Open Sans", sans-serif;
+			font-weight: 300;
+			line-height: 1.5;
+			font-size: 24px;
+			text-align: center;
+			color: gray;
+		}
+
+		.screen11 h2 {
+			margin-top: 65px;
+		}
+
+		span {
+			font-weight: bold;
+			color: #fad900;
+		}
+
+		#fullname,
+		#phone {
+			width: 380px;
+			padding: 12px ;
+			margin-left: 23%;
+			font-family: "Helvetica Neue", "Open Sans", sans-serif;
+			font-weight: 300;
+			font-size: 16px;
+			color: gray;
+			box-sizing: border-box;
+			border: 0.5px solid lightgray;
+			border-radius: 10px;
+		}
+
+		#phone {
+			margin-top: 18px;
+		}
+
+		#agreement {
+			position: relative;
+			top: -3px; 
+			margin-top: 18px;
+			font-family: "Helvetica Neue", "Open Sans", sans-serif;
+			font-weight: 300;
+			color: gray;
+		}
+
+		#screen1-right-button {
+			border: 0.5px solid #51b02b;
+			border-radius: 10px;
+			font-size: 16px;
+			font-family: "Helvetica Neue", "Open Sans", sans-serif;
+			font-weight: 300;
+			padding: 12px;
+			background-color: #51b02b;
+			color: white;
+			cursor: pointer;
+			margin-top: 18px;
+			margin-left: 23%;
+			box-shadow: 
+				8px 8px 0 -5px rgba(255, 215, 0, 0.9),
+				-8px -8px 0 -5px rgba(135, 206, 250, 0.9);
+			width: 380px;
+		}
+
+		label {
+			font-family: "Helvetica Neue", "Open Sans", sans-serif;
+			font-size: 14px;
+			font-weight: 300;
+			color: gray;
+		}
+
+		.agreement {
+			width: 380px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+		/* SCREEN 1 */
+
+		
+		/* OTHER SCREENS */
+		.screen2,
+		.screen3,
+		.screen4,
+		.screen5,
+		.screen6,
+		.screen7,
+		.screen8, 
+		.screen10 {
+			min-height: 600px;
+			width: 100%;
+			clear: both;
+			margin: 0;
+		}
+
+		.screen2-left,
+		.screen3-left,
+		.screen4-left,
+		.screen5-left,
+		.screen6-left,
+		.screen7-left,
+		.screen8-left,
+		.screen9-1-left,
+		.screen9-2-left,
+		.screen9-3-left,
+		.screen10-left {
+			display: block;
+			float: left;
+			position: relative;
+			bottom: -4px;
+			max-width: 510px;
+			margin-left: 50px;
+			margin-top: 100px;
+		}
+
+		.screen2-right,
+		.screen3-right,
+		.screen4-right,
+		.screen5-right,
+		.screen6-right,
+		.screen7-right,
+		.screen8-right,
+		.screen9-1-right,
+		.screen9-2-right,
+		.screen9-3-right,
+		.screen10-right {
+			display: block;
+			float: right;
+			position: relative;
+			bottom: -4px;
+			max-width: 510px;
+			margin-right: 50px;
+			margin-top: 100px;
+		}
+
+		/*.screen2 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.screen2-left,
+		.screen2-right {}*/
+
+		.screen2-left h2,
+		.screen3-right h2,
+		.screen4-left h2,
+		.screen5-right h2,
+		.screen6-left h2,
+		.screen7-right h2,
+		.screen8-left h2,
+		.screen9 h2,
+		.screen10 h2 {
+			font-family: "Helvetica Neue", "Open Sans", sans-serif;
+			font-weight: 300;
+			line-height: 1.5;
+			font-size: 24px;
+			text-align: center;
+			color: gray;
+		}
+
+		.screen9 h2 {
+			margin-top: 70px;
+			margin-bottom: -10px;
+		}
+
+		.screen10 h2 {
+			padding-top: 50px;
+		}
+
+		.screen2-left p,
+		.screen3-right p,
+		.screen4-left p,
+		.screen5-right p,
+		.screen6-left p,
+		.screen7-right p,
+		.screen8-left p,
+		.screen9-1-right p,
+		.screen9-2-left p,
+		.screen9-3-right p {
+			font-family: "Helvetica Neue", "Open Sans", sans-serif;
+			font-weight: 300;
+			line-height: 1.7;
+			font-size: 14px;
+			text-align: left;
+			color: gray;
+			margin-right: 5%;
+			margin-left: 5%;
+		}
+
+		.screen10 li {
+			/*display: inline-block;*/
+			margin: 0;
+			/*margin-left: 50px;*/
+			padding: 0;
+			list-style: none;
+		}
+
+		.screen10 h3 {
+			/*margin: 0 35px 0 35px;*/
+			padding: 0;
+			width: 330px;
+			text-align: center;
+			margin-bottom: 30px;
+			font-family: "Helvetica Neue", "Open Sans", sans-serif;
+			font-weight: 300;
+			line-height: 1.7;
+			font-size: 14px;
+			color: gray;
+			/*border: 1px dotted lightgrey;*/
+		}
+
+		.screen9-1,
+		.screen9-2,
+		.screen9-3 {
+			margin-bottom: 10px;
+			/*margin-top: -40px;*/
+		}
+
+		.screen2,
+		.screen4,
+		.screen6,
+		.screen8,
+		.screen10 {
+			background-color: #f3f3f3;
+		}
+
+		.screen9 {
+			min-height: 600px;
+			width: 100%;
+			clear: both;
+			margin: 0;
+		}
+
+		.screen9 cite,
+		.screen9 blockquote,
+		.screen9 p {
+			margin-left: 0;
+			font-style: italic;
+		}
+
+		.button {
+			border: 0px solid black;
+			border-radius: 10px;
+			font-size: 16px;
+			font-family: "Helvetica Neue", "Open Sans", sans-serif;
+			font-weight: 300;
+			text-decoration: none;
+			text-align: center;
+			padding: 12px;
+			padding-left: 50px;
+			padding-right: 50px;
+			background-color: #51b02b;
+			color: white;
+			cursor: pointer;
+			margin-top: 30px;
+			display: block;
+		    margin-left: auto;
+		    margin-right: auto;
+			/*box-shadow: 0 0 12px rgba(0,0,0,0.2);*/
+		}
+
+		.button {
+			width: 100px;
+		}
+
+		.screen9 .button {
+			margin-top: 70px;
+			margin-bottom: 70px;
+		}
+
+		.screen10 .button {
+			margin-bottom: -30px;
+		}
+
+		.screen2-left {
+			margin: 90px 0px 0px 90px;
+		}
+
+		.screen3-right {
+			margin: 80px 80px 0px 0px;
+		}
+
+		.screen4-left {
+			margin: 100px 0px 0px 90px;
+		}
+
+		#header-right-button:hover,
+		#screen1-right-button:hover,
+		.button:hover {
+			background-color: dodgerblue;
+			border-color: dodgerblue;
+			transform: scale(1.025);
+			transition-duration: 0.5s;
+			transition-property: background-color;
+		}
+
+		.layout-positioner {
+			max-width: 1200px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.clearfix::after {
+  			content: "";
+			display: table;
+			clear: both;
+			height: 0;
+			font-size: 0px;
+			border: 0px solid;
+			margin: 0;
+			padding: 0;
+			visibility: hidden;
+		}
+
+		/* IMG */
+		.screen2-right,
+		.screen3-left,
+		.screen4-right,
+		.screen5-left {
+			width: 450px;
+			text-align: center;
+		}
+
+		.background {
+			background: url("img/background-photo-2.png");
+			background-size: 50px auto;
+		}
+
+		.screen6-right {
+			height: 300px;
+			width: 400px;
+			align-content: center;
+			background: url("img/7-screen-6.png") no-repeat 50% 100%;
+			background-color: #e7e7e7;
+			box-shadow: 0 0 30px rgba(0,0,0,0.15);
+		}
+
+		.screen8-right {
+			height: 300px;
+			width: 450px;
+			align-content: center;
+			background: url("img/9-screen-8.png") no-repeat 50% 100%;
+			background-color: #e7e7e7;
+			box-shadow: 0 0 30px rgba(0,0,0,0.15);
+		}
+
+		.screen9 img {
+			box-shadow: 
+				0 15px 0px -10px powderblue,
+				0 -15px 0px -10px lightblue,
+				0 24px 5px -15px navajowhite,
+				0 -22px 5px -15px gold;
+		} 
+
+		.screen9 img {
+			transform: rotate(-3deg);
+		} 
+
+		.screen9-2 img {
+			transform: rotate(3deg);
+		} 
+
+		/*.screen10-advantages-1,
+		.screen10-advantages-2,
+		.screen10-advantages-3,
+		.screen10-advantages-4,
+		.screen10-advantages-5 {
+			margin-left: auto;
+			margin-right: auto;
+			min-height: 300px;
+			width: 240px;
+			border: 1px dotted grey;
+		}*/
+
+		.screen10 h3::before {
+			position: relative;
+			content: "";
+			display: block;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			background: url("img/sprites.png") no-repeat;
+		}
+
+		.screen10 li:nth-child(1) h3::before {
+			margin-left: auto;
+			margin-right: auto;
+			background-position: -50px -49px;
+			width: 128px;
+			height: 129px;
+		}
+
+		.screen10 li:nth-child(2) h3::before {
+			margin-left: auto;
+			margin-right: auto;
+			background-position: -201px -51px ;
+			width: 175px;
+			height: 98px;
+		}
+
+		.screen10 li:nth-child(3) h3::before {
+			margin-left: auto;
+			margin-right: auto;
+			background-position: -401px -50px ;
+			width: 144px;
+			height: 130px;
+		}
+
+		.screen10 li:nth-child(4) h3::before {
+			margin-left: auto;
+			margin-right: auto;
+			background-position: -51px -201px ;
+			width: 148px;
+			height: 109px;
+		}
+
+		.screen10 li:nth-child(5) h3::before {
+			margin-left: auto;
+			margin-right: auto;
+			background-position: -250px -201px ;
+			width: 146px;
+			height: 97px;
+		}
+
+		.screen10-advantages {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-left: 0;
+			padding-left: 0;
+		}
+		/* IMG */
+
+		#dark-background {
+	        background: rgba(102, 102, 102, 0.5);
+	        width: 100%;
+	        height: 100%;
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        display: none;
+	      }
+
+	    #window-order {
+	        width: 500px;
+	        height: 280px;
+	        text-align: center;
+	        padding: 15px;
+	        border: 0.5px solid grey;
+	        border-radius: 10px;
+	        color: #0000cc;
+	        position: absolute;
+	        top: 0;
+	        right: 0;
+	        bottom: 0;
+	        left: 0;
+	        margin: auto;
+	        background: #fff;
+	      }
+
+	    #window-order img {
+	    	position: relative;
+	    	top: -13px;
+	    	left: 245px;
+	    	width: 16px;
+	    }
+
+	    #window-order input,
+	    #window-order button {
+	    	margin-top: 18px;
+			margin-left: 0;
+	    }
+
+	    #window-order input[type=text] {
+	    	margin-top: -10px;
+	    }
+
+	    #window-order button {
+	    	margin-left: auto;
+	    	margin-right: auto;
+	    }
+
+	    #dark-background:target {
+	    	display: block;
+	    }
+	    
+	    .close {
+	        display: inline-block;
+	        color: #0000cc;
+	        margin: 10px;
+	        text-decoration: none;
+	        font-size: 14pt;
+	        cursor:pointer;
+	      }
+
+	    .close:hover {
+	    	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	    	background: none;
+	    	border-radius: 50%;
+	      }
+		/* OTHER SCREENS */
+
+
+		/* FOOTER */
+		footer {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			min-height: 60px; 
+			background-color: #fad900;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+
+		footer p {
+			margin: 0;
+			padding: 0;
+			padding: 20px 0px;
+			text-align: center;
+			font-family: "Helvetica Neue", "Open Sans", sans-serif;
+			font-weight: 300;
+			line-height: 1.5;
+			font-size: 11px;
+			color: black;
+		}
+
+		footer a {
+			color: black;
+		}
+		/* FOOTER */
+
+
+		/* ANIMATION */
+			.screen1-left,
+			.screen11-left {
+				animation-name: translate;
+				animation-duration: 5s;
+			}
+
+			.screen1-right,
+			.screen11-right {
+				animation-name: scale;
+				animation-duration: 5s;
+			}
+
+			/*.screen10 li:nth-child(1) h3::before,
+			.screen10 li:nth-child(2) h3::before,
+			.screen10 li:nth-child(3) h3::before,
+			.screen10 li:nth-child(4) h3::before,
+			.screen10 li:nth-child(5) h3::before {
+			    animation: rotate-colors 5s linear infinite;
+			}*/
+
+			@keyframes translate {
+				0% { transform: translateX(-135px); }
+				100% { transform: translateX(0px); }
+			}
+
+			@keyframes scale {
+				0% { opacity: 0; }
+				100% { opacity: 1; }
+			}
+
+			/*@keyframes rotate-colors { 
+			    100% {
+			        filter: hue-rotate(360deg);
+			    }
+			}*/
+		/* ANIMATION */
+	</style>
+</head>
+<body>
+	<!-- HEADER -->
+	<header class="header clearfix">
+		<nav class="layout-positioner">
+			<div class="header-left">
+				<img src="img/1-logo(2).png" alt="Логотип ПИКЧИ" width="306" height="50">
+			</div>
+			<div class="header-right">
+				<button type="button" name="header-right-button" id="header-right-button">Подробнее</button>
+				<!-- <a href="https://www.google.ru" target="_blank" class="button">Подробнее</a> -->
+			</div>
+		</nav>
+	</header>
+	<!-- HEADER -->
+
+
+	<main>
+		<!-- SCREEN 1 -->
+		<section class="screen1 background clearfix">
+			<div class="layout-positioner">
+				<div class="screen1-left wow">
+					<img src="img/2-screen-1.png" alt="Изображение 1" width="314" height="553">
+				</div>
+				<div class="screen1-right wow">
+					<h1>Станьте профессиональным фотографом,<br>
+					пройдя обучение в международной<br>
+					сети фотошкол <span>ПИКЧА</span>
+					</h1>
+					<form name="screen1-form">
+						<input type="text" name="fullname" id="fullname" placeholder="Ваше имя" autocomplete="on" tabindex="0" autofocus><br>
+						<input type="tel" name="phone" id="phone" placeholder="Телефон: +7(___)___-__-__" tabindex="0" required><br>
+						<button class="button" type="submit" name="screen1-right-button" id="screen1-right-button" tabindex="0">Подробнее</button>
+						<div class="agreement">
+							<input type="checkbox" name="agreement" id="agreement" tabindex="0" checked>
+							<label for="agreement" tabindex="0">Отправляя заявку, я даю согласие на обработку персональных данных</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- SCREEN 1 -->
+
+
+		<!-- SCREEN 2 -->
+		<section class="screen2 clearfix">
+			<div class="layout-positioner">
+				<div class="screen2-left">
+					<h2>Выберите свой путь развития</h2>
+					<div class="screen2-left-p">					
+						<p>В ПИКЧЕ курсы делятся на несколько направлений:<br>
+						— основы фотографии для новичков;<br>					
+						— про-курс для любителей;<br>
+						— свадебное фото;<br>
+						— обработка фотографий;<br>
+						— видеография;<br>
+						— студийные интенсивы.</p>			
+						<p>Оставьте телефон, и менеджер расскажет подробнее
+						о понравившемся вам курсе.</p>
+						<a href="#dark-background" class="button">Подробнее</a>
+						<div id="dark-background">
+					      	<div id="window-order">
+						      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close"></a>
+						        <form name="screen1-form">
+									<input type="text" name="fullname" id="fullname" placeholder="Ваше имя" autocomplete="on" tabindex="0"><br>
+									<input type="tel" name="phone" id="phone" placeholder="Телефон: +7(___)___-__-__" tabindex="0" pattern required><br>
+									<button class="button" type="submit" name="screen1-right-button" id="screen1-right-button" tabindex="0">Подробнее</button>
+									<div class="agreement">
+										<input type="checkbox" name="agreement" id="agreement" checked>
+										<label for="agreement">Отправляя заявку, я даю согласие на обработку персональных данных</label>
+									</div>
+								</form>
+					     	</div>
+					    </div>
+					</div>			
+				</div>
+				<div class="screen2-right">	
+					<img src="img/3-screen-2.png" alt="Изображение 2" width="247" height="500">
+				</div>
+			</div>
+		</section>
+		<!-- SCREEN 2 -->
+
+
+		<!-- SCREEN 3 -->
+		<section class="screen3 clearfix">
+		 	<div class="layout-positioner">
+				<div class="screen3-left">
+					<img src="img/4-screen-3.png" alt="Изображение 3" width="303" height="500">
+				</div>
+				<div class="screen3-right">
+					<h2>Вы сами составляете программу обучения</h2>
+					<p>Мы понимаем, что обучение будет максимально полезным, когда процесс ориентирован на интересы и пожелания учеников. У вас будет возможность подобрать удобное расписание и посещать занятия именно в те дни и в то время, когда вы можете.</p>
+					<p>Стать профессионалом в определенной сфере вам поможет специализация. Если вы хотите заниматься только свадебной фотографией, вы будете изучать только её.</p>
+					<p>Оставьте имя и телефон, менеджер поможет составить персональную программу.</p>
+					<a href="#dark-background" class="button">Подробнее</a>
+					<div id="dark-background">
+				     	<div id="window-order">
+					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close"></a>
+					        <form name="screen1-form">
+								<input type="text" name="fullname" id="fullname" placeholder="Ваше имя" autocomplete="on" tabindex="0"><br>
+								<input type="tel" name="phone" id="phone" placeholder="Телефон: +7(___)___-__-__" tabindex="0" pattern required><br>
+								<button class="button" type="submit" name="screen1-right-button" id="screen1-right-button" tabindex="0">Подробнее</button>
+								<div class="agreement">
+									<input type="checkbox" name="agreement" id="agreement" checked>
+									<label for="agreement">Отправляя заявку, я даю согласие на обработку персональных данных</label>
+								</div>
+							</form>					     	
+						</div>
+					</div>
+				</div> 
+			</div>	
+		</section>
+		<!-- SCREEN 3 -->
+
+
+		<!-- SCREEN 4 -->
+		<section class="screen4 clearfix">
+		 	<div class="layout-positioner">
+			 	<div class="screen4-left">
+					<h2>Теория всегда закрепляется практикой</h2>
+					<p>Только так можно научиться круто фотографировать. Уже на первой встрече вы начнёте делать свои первые снимки в ручном режиме! И все новые знания закрепим серией практических упражнений.</p>
+					<p>Вы прочувствуете на себе, кто такой «профессиональный фотограф». Договоритесь со своей первой моделью, найдёте подходящую локацию и осуществите первую фотосессию.</p>
+					<p>Оставьте имя и телефон, менеджер расскажет подробнее, что будет на практике.</p>
+					<a href="#dark-background" class="button">Подробнее</a>
+					<div id="dark-background">
+				     	<div id="window-order">
+					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close"></a>
+					        <form name="screen1-form">
+								<input type="text" name="fullname" id="fullname" placeholder="Ваше имя" autocomplete="on" tabindex="0"><br>
+								<input type="tel" name="phone" id="phone" placeholder="Телефон: +7(___)___-__-__" tabindex="0" pattern required><br>						
+								<button class="button" type="submit" name="screen1-right-button" id="screen1-right-button">Подробнее</button>
+								<div class="agreement">
+									<input type="checkbox" name="agreement" id="agreement" checked>
+									<label for="agreement">Отправляя заявку, я даю согласие на обработку персональных данных</label>
+								</div>
+							</form>					     	
+						</div>
+					</div>	
+				</div> 
+			 	<div class="screen4-right">
+					<img src="img/5-screen-4.png" alt="Изображение 4" width="221" height="500">
+				</div>
+			</div>
+		</section>
+		<!-- SCREEN 4 -->
+
+
+		<!-- SCREEN 5 -->
+		<section class="screen5 clearfix">
+		 	<div class="layout-positioner">
+				<div class="screen5-left">
+					<img src="img/6-screen-5.png" alt="Изображение 5" width="396" height="500">
+				</div>
+				<div class="screen5-right">
+					<h2>Окружите себя творческими людьми</h2>
+					<p>Широко известно, что окружение влияет на человека. Поэтому если вы являетесь творческим человеком, вам важно учиться в окружении таких же творческих личностей.</p>
+					<p>В ПИКЧЕ вы найдете тех, кто развивается в том же направлении, что и вы — в фотографии. Здесь вы обретете свою творческую семью. Она станет для вас основой на долгие годы.</p>
+					<p>Оставьте имя и телефон, менеджер познакомит вас с вашей новой группой.</p>
+					<a href="#dark-background" class="button">Подробнее</a>
+					<div id="dark-background">
+				     	<div id="window-order">
+					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close"></a>
+					        <form name="screen1-form">
+								<input type="text" name="fullname" id="fullname" placeholder="Ваше имя" autocomplete="on" tabindex="0"><br>
+								<input type="tel" name="phone" id="phone" placeholder="Телефон: +7(___)___-__-__" tabindex="0" pattern required><br>						
+								<button class="button" type="submit" name="screen1-right-button" id="screen1-right-button" tabindex="0">Подробнее</button>
+								<div class="agreement">
+									<input type="checkbox" name="agreement" id="agreement" checked>
+									<label for="agreement">Отправляя заявку, я даю согласие на обработку персональных данных</label>
+								</div>
+							</form>					     	
+						</div>
+					</div>	
+				</div> 	
+			</div>
+		</section>
+		<!-- SCREEN 5 -->
+
+
+		<!-- SCREEN 6 -->
+		<section class="screen6 clearfix">
+		 	<div class="layout-positioner">
+				<div class="screen6-left">
+					<h2>Уроки ведут действующие<br> 
+					фотографы с многолетним опытом</h2>
+					<p>Преподаватели фотошколы ПИКЧА никогда не расстаются со своими камерами. Фотография — это их стиль и образ жизни. Одновременно это и профессия, которая позволяет расти и развиваться. И они с удовольствием делятся своим опытом с учениками!</p>
+					<p>Оставьте имя и телефон, менеджер расскажет больше о вашем преподавателе.</p>
+					<a href="#dark-background" class="button">Подробнее</a>
+					<div id="dark-background">
+				     	<div id="window-order">
+					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close"></a>
+					        <form name="screen1-form">
+								<input type="text" name="fullname" id="fullname" placeholder="Ваше имя" autocomplete="on" tabindex="0"><br>
+								<input type="tel" name="phone" id="phone" placeholder="Телефон: +7(___)___-__-__" tabindex="0" pattern required><br>						
+								<button class="button" type="submit" name="screen1-right-button" id="screen1-right-button" tabindex="0">Подробнее</button>
+								<div class="agreement">
+									<input type="checkbox" name="agreement" id="agreement" checked>
+									<label for="agreement">Отправляя заявку, я даю согласие на обработку персональных данных</label>
+								</div>
+							</form>					     	
+						</div>
+					</div>	
+				</div>
+				<div class="screen6-right">
+					<!-- <img src="img/7-screen-6.png" alt="Изображение 6" width="338" height="270"> -->
+				</div> 	
+			</div>
+		</section>
+		<!-- SCREEN 6 -->
+
+
+		<!-- SCREEN 7 -->
+		<section class="screen7 clearfix">
+		 	<div class="layout-positioner">
+				<div class="screen7-left">
+					<img src="img/8-screen-7.png" alt="Изображение 7" width="421" height="300">
+				</div>
+				<div class="screen7-right">
+					<h2>После завершения курса</h2>
+					<p>Полностью завершив обучение, вы повысите свои навыки в фотографии. У вас наберется большое портфолио с яркими работами и вы точно будете знать, как сделать фотографию своей профессией.</p>
+					<p>Фоторынок России только набирает обороты и многие направления еще не заняты сильными профессионалами. У вас есть возможность попасть в историю!</p>
+					<p>Оставьте телефон, менеджер опишет все возможности, которые откроются вам.</p>
+					<a href="#dark-background" class="button">Подробнее</a>
+					<div id="dark-background">
+				     	<div id="window-order">
+					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close"></a>
+					        <form name="screen1-form">
+								<input type="text" name="fullname" id="fullname" placeholder="Ваше имя" autocomplete="on" tabindex="0"><br>
+								<input type="tel" name="phone" id="phone" placeholder="Телефон: +7(___)___-__-__" tabindex="0" pattern required><br>						
+								<button class="button" type="submit" name="screen1-right-button" id="screen1-right-button" tabindex="0">Подробнее</button>
+								<div class="agreement">
+									<input type="checkbox" name="agreement" id="agreement" checked>
+									<label for="agreement">Отправляя заявку, я даю согласие на обработку персональных данных</label>
+								</div>
+							</form>					     	
+						</div>
+					</div>	
+				</div> 	
+			</div>
+		</section>
+		<!-- SCREEN 7 -->
+
+
+		<!-- SCREEN 8 -->
+		<section class="screen8 clearfix">
+		 	<div class="layout-positioner">
+				<div class="screen8-left">
+					<h2>Первое в России<br> 
+					реалити-шоу по фотографии</h2>
+					<p>ПИКЧА стала первой фотошколой в стране, кто запустил собственное реалити-шоу по фотографии.</p>
+					<p>Мы отобрали 15 участников и обучили их искусству фотографии в прямом эфире всего за 3 месяца.</p>
+					<p>Оставьте телефон, менеджер подскажет дату и время первого пробного урока.</p>
+					<a href="#dark-background" class="button">Подробнее</a>
+					<div id="dark-background">
+				     	<div id="window-order">
+					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close"></a>
+					        <form name="screen1-form">
+								<input type="text" name="fullname" id="fullname" placeholder="Ваше имя" autocomplete="on" tabindex="0"><br>
+								<input type="tel" name="phone" id="phone" placeholder="Телефон: +7(___)___-__-__" tabindex="0" pattern required><br>						
+								<button class="button" type="submit" name="screen1-right-button" id="screen1-right-button" tabindex="0">Подробнее</button>
+								<div class="agreement">
+									<input type="checkbox" name="agreement" id="agreement" checked>
+									<label for="agreement">Отправляя заявку, я даю согласие на обработку персональных данных</label>
+								</div>
+							</form>					     	
+						</div>
+					</div>	
+				</div>
+				<div class="screen8-right">
+					<!-- <img src="img/7-screen-6.png" alt="Изображение 6" width="338" height="270"> -->
+				</div> 	
+			</div>
+		</section>
+		<!-- SCREEN 8 -->
+
+
+		<!-- SCREEN 9 -->
+		<section class="screen9 clearfix">
+		 	<div class="layout-positioner">
+		 		<h2>Что говорят выпускники школы</h2>
+		 		<div class="screen9-1 clearfix">
+					<div class="screen9-1-left">
+						<img src="img/10-screen-9-1.png" alt="Изображение 9-1" width="445" height="300">
+					</div>
+					<div class="screen9-1-right">
+						<cite>Слава Шлыков</cite>
+						<blockquote>
+							<p>«ПИКЧА — лучшее, что могло случиться со мной за последнее время.</p>
+							<p>Это сильная фотошкола, потому что там работают прекрасные люди, каждый из которых горит своим делом. Преподаватели просто и понятно доносили все от теории до практики.</p>
+							<p>Видно, как они хотят сделать из тебя профессионала даже больше, чем ты сам. Обучение строилось таким образом, чтобы человек, который никогда не держал в руках зеркалку в итоге делал прекрасные кадры».</p>
+						</blockquote>
+					</div>
+				</div>
+
+				<div class="screen9-2 clearfix">
+					<div class="screen9-2-left">
+						<cite>Эвелина Трофимова</cite>
+						<blockquote>
+							<p>«Неужели это всё? Даже не верится, что закончили фотокурс…</p>
+							<p>Пришла в фотошколу, чтобы разобраться с настройками фотоаппарата и просто хорошо фотографировать своих детей. И я никак не ожидала, что меня так затянет в фотографию! А всё благодаря нашим преподавателям. Спасибо вам, что научили и вдохновили! Было очень интересно, полезно, весело и непринужденно на уроках, как на практиках, так и на теории и разборе домашек)</p>
+							<p>Отдельное спасибо за это преподавателю! Бесконечно благодарна всем, кто был с нами (с 66 гр) все эти семь месяцев, вы огромные молодцы! Всегда придумываете что-то новое, а главное интересное!»</p>
+						</blockquote>
+					</div>
+					<div class="screen9-2-right">
+						<img src="img/11-screen-9-2.png" alt="Изображение 9-2" width="445" height="300">
+					</div>
+				</div>
+
+				<div class="screen9-3 clearfix">
+					<div class="screen9-3-left">
+						<img src="img/12-screen-9-3.png" alt="Изображение 9-3" width="445" height="300">
+					</div>
+					<div class="screen9-3-right">
+						<cite>Даша Трифонова</cite>
+						<blockquote>
+							<p>«Хочу выразитель благодарность всему коллективу фотошколы!</p>
+							<p>очень хорошее отношение к каждому ученику!всё подробно расскажут и всегда помогут!Увлекаясь фотографией понимаешь,что вокруг так много всего интересного и увлекательного!Просто начинаешь узнавать себя с другой стороны!</p>
+							<p>Для меня это как новый этап в жизни!Спасибо вам большое за всё!».</p>
+						</blockquote>
+					</div> 
+				</div>
+
+				<a href="#dark-background" class="button">Подробнее</a>
+				<div id="dark-background">
+			     	<div id="window-order">
+				      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close"></a>
+				        <form name="screen1-form">
+							<input type="text" name="fullname" id="fullname" placeholder="Ваше имя" autocomplete="on" tabindex="0"><br>
+							<input type="tel" name="phone" id="phone" placeholder="Телефон: +7(___)___-__-__" tabindex="0" pattern required><br>							
+							<button class="button" type="submit" name="screen1-right-button" id="screen1-right-button" tabindex="0">Подробнее</button>
+							<div class="agreement">
+								<input type="checkbox" name="agreement" id="agreement" checked>
+								<label for="agreement">Отправляя заявку, я даю согласие на обработку персональных данных</label>
+							</div>
+						</form>					     	
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- SCREEN 9 -->
+
+
+		<!-- SCREEN 10 -->
+		<section class="screen10 clearfix">
+		 	<div class="layout-positioner">
+		 			<h2>Почему доверяют качеству<br>
+		 			нашего фотообучения</h2>
+					<ul class="screen10-advantages">
+						<li class="icons icon1"><div class="screen10-advantages-1"><h3>Более 6 лет обучаем <br>людей фотографии</h3></div></li>
+						<li class="icons icon2"><div class="screen10-advantages-2"><h3>Филиалы ПИКЧИ есть в <br>32 городах России и СНГ</h3></div></li>
+						<li class="icons icon3"><div class="screen10-advantages-3"><h3>Мы выпустили <br>70 000 фотографов</h3></div></li>
+						<li class="icons icon4"><div class="screen10-advantages-4"><h3>Вы получаете сертификат <br>об обучении</h3></div></li>
+						<li class="icons icon5"><div class="screen10-advantages-5"><h3>Есть специализация <br>знаний</h3></div></li>
+					</ul>
+					<a href="#dark-background" class="button">Подробнее</a>
+					<div id="dark-background">
+				     	<div id="window-order">
+					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close"></a>
+					        <form name="screen1-form">
+								<input type="text" name="fullname" id="fullname" placeholder="Ваше имя" autocomplete="on" tabindex="0"><br>
+								<input type="tel" name="phone" id="phone" placeholder="Телефон: +7(___)___-__-__" tabindex="0" pattern required><br>						
+								<button class="button" type="submit" name="screen1-right-button" id="screen1-right-button" tabindex="0">Подробнее</button>
+								<div class="agreement">
+									<input type="checkbox" name="agreement" id="agreement" checked>
+									<label for="agreement">Отправляя заявку, я даю согласие на обработку персональных данных</label>
+								</div>
+							</form>					     	
+						</div>
+					</div>	
+				</div>
+				<div class="screen10-right">
+					<!-- <img src="img/7-screen-6.png" alt="Изображение 6" width="338" height="270"> -->
+				</div> 	
+			</div>
+		</section>
+		<!-- SCREEN 10 -->
+
+		<!-- SCREEN 11 -->
+		<section class="screen11 background clearfix">
+		 	<div class="layout-positioner">
+		 		<div class="screen11-left wow">
+					<img src="img/13-screen-11.png" alt="Изображение 13" width="257" height="550">
+				</div>
+				<div class="screen11-right wow">
+					<h2>Запись на бесплатный,<br>
+					пробный урок <span>по фотографии:</span>
+					</h2>
+					<form name="screen1-form">
+						<input type="text" name="fullname" id="fullname" placeholder="Ваше имя" autocomplete="on" tabindex="1"><br>
+						<input type="tel" name="phone" id="phone" placeholder="Телефон: +7(___)___-__-__" tabindex="2" pattern required><br>
+						<button class="button" type="submit" name="screen1-right-button" id="screen1-right-button">Подробнее</button>
+						<div class="agreement">
+							<input type="checkbox" name="agreement" id="agreement" checked>
+							<label for="agreement">Отправляя заявку, я даю согласие на обработку персональных данных</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- SCREEN 11 -->
+	 </main>
+
+
+	 <footer class="footer clearfix">
+	 	<p>ООО «Управляющая компания «Фотошкола»<br>
+		ИНН 1659163880 | ОГРН 1151690090970<br>
+		<a href="#">Политика конфиденциальности</a></p>
+	 </footer>
+</body>
+</html>
