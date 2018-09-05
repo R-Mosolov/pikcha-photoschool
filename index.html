@@ -435,6 +435,7 @@
 		.screen5-left {
 			width: 450px;
 			text-align: center;
+			/*filter: drop-shadow(7px 0 0 #fad900);*/
 		}
 
 		.background {
@@ -646,12 +647,30 @@
 
 		/* ANIMATION */
 			.screen1-left,
+			.screen3-left,
+			.screen5-left,
+			.screen7-left,
 			.screen11-left {
-				animation-name: translate;
+				animation-name: translate-to-right;
+				animation-duration: 5s;
+			}
+
+			.screen2-right,
+			.screen4-right,
+			.screen6-right,
+			.screen8-right {
+				animation-name: translate-to-left;
 				animation-duration: 5s;
 			}
 
 			.screen1-right,
+			.screen2-left,
+			.screen3-right,
+			.screen4-left,
+			.screen5-right,
+			.screen6-left,
+			.screen7-right,
+			.screen8-left,
 			.screen11-right {
 				animation-name: scale;
 				animation-duration: 5s;
@@ -665,8 +684,13 @@
 			    animation: rotate-colors 5s linear infinite;
 			}*/
 
-			@keyframes translate {
+			@keyframes translate-to-right {
 				0% { transform: translateX(-135px); }
+				100% { transform: translateX(0px); }
+			}
+
+			@keyframes translate-to-left {
+				0% { transform: translateX(135px); }
 				100% { transform: translateX(0px); }
 			}
 
@@ -729,7 +753,7 @@
 		<!-- SCREEN 2 -->
 		<section class="screen2 clearfix">
 			<div class="layout-positioner">
-				<div class="screen2-left">
+				<div class="screen2-left wow">
 					<h2>Выберите свой путь развития</h2>
 					<div class="screen2-left-p">					
 						<p>В ПИКЧЕ курсы делятся на несколько направлений:<br>
@@ -758,7 +782,7 @@
 					    </div>
 					</div>			
 				</div>
-				<div class="screen2-right">	
+				<div class="screen2-right wow">	
 					<img src="img/3-screen-2.png" alt="Изображение 2" width="247" height="500">
 				</div>
 			</div>
@@ -769,10 +793,10 @@
 		<!-- SCREEN 3 -->
 		<section class="screen3 clearfix">
 		 	<div class="layout-positioner">
-				<div class="screen3-left">
+				<div class="screen3-left wow">
 					<img src="img/4-screen-3.png" alt="Изображение 3" width="303" height="500">
 				</div>
-				<div class="screen3-right">
+				<div class="screen3-right wow">
 					<h2>Вы сами составляете программу обучения</h2>
 					<p>Мы понимаем, что обучение будет максимально полезным, когда процесс ориентирован на интересы и пожелания учеников. У вас будет возможность подобрать удобное расписание и посещать занятия именно в те дни и в то время, когда вы можете.</p>
 					<p>Стать профессионалом в определенной сфере вам поможет специализация. Если вы хотите заниматься только свадебной фотографией, вы будете изучать только её.</p>
@@ -801,7 +825,7 @@
 		<!-- SCREEN 4 -->
 		<section class="screen4 clearfix">
 		 	<div class="layout-positioner">
-			 	<div class="screen4-left">
+			 	<div class="screen4-left wow">
 					<h2>Теория всегда закрепляется практикой</h2>
 					<p>Только так можно научиться круто фотографировать. Уже на первой встрече вы начнёте делать свои первые снимки в ручном режиме! И все новые знания закрепим серией практических упражнений.</p>
 					<p>Вы прочувствуете на себе, кто такой «профессиональный фотограф». Договоритесь со своей первой моделью, найдёте подходящую локацию и осуществите первую фотосессию.</p>
@@ -822,7 +846,7 @@
 						</div>
 					</div>	
 				</div> 
-			 	<div class="screen4-right">
+			 	<div class="screen4-right wow">
 					<img src="img/5-screen-4.png" alt="Изображение 4" width="221" height="500">
 				</div>
 			</div>
@@ -833,10 +857,10 @@
 		<!-- SCREEN 5 -->
 		<section class="screen5 clearfix">
 		 	<div class="layout-positioner">
-				<div class="screen5-left">
+				<div class="screen5-left wow">
 					<img src="img/6-screen-5.png" alt="Изображение 5" width="396" height="500">
 				</div>
-				<div class="screen5-right">
+				<div class="screen5-right wow">
 					<h2>Окружите себя творческими людьми</h2>
 					<p>Широко известно, что окружение влияет на человека. Поэтому если вы являетесь творческим человеком, вам важно учиться в окружении таких же творческих личностей.</p>
 					<p>В ПИКЧЕ вы найдете тех, кто развивается в том же направлении, что и вы — в фотографии. Здесь вы обретете свою творческую семью. Она станет для вас основой на долгие годы.</p>
@@ -865,7 +889,7 @@
 		<!-- SCREEN 6 -->
 		<section class="screen6 clearfix">
 		 	<div class="layout-positioner">
-				<div class="screen6-left">
+				<div class="screen6-left wow">
 					<h2>Уроки ведут действующие<br> 
 					фотографы с многолетним опытом</h2>
 					<p>Преподаватели фотошколы ПИКЧА никогда не расстаются со своими камерами. Фотография — это их стиль и образ жизни. Одновременно это и профессия, которая позволяет расти и развиваться. И они с удовольствием делятся своим опытом с учениками!</p>
@@ -886,7 +910,7 @@
 						</div>
 					</div>	
 				</div>
-				<div class="screen6-right">
+				<div class="screen6-right wow">
 					<!-- <img src="img/7-screen-6.png" alt="Изображение 6" width="338" height="270"> -->
 				</div> 	
 			</div>
@@ -897,10 +921,10 @@
 		<!-- SCREEN 7 -->
 		<section class="screen7 clearfix">
 		 	<div class="layout-positioner">
-				<div class="screen7-left">
+				<div class="screen7-left wow">
 					<img src="img/8-screen-7.png" alt="Изображение 7" width="421" height="300">
 				</div>
-				<div class="screen7-right">
+				<div class="screen7-right wow">
 					<h2>После завершения курса</h2>
 					<p>Полностью завершив обучение, вы повысите свои навыки в фотографии. У вас наберется большое портфолио с яркими работами и вы точно будете знать, как сделать фотографию своей профессией.</p>
 					<p>Фоторынок России только набирает обороты и многие направления еще не заняты сильными профессионалами. У вас есть возможность попасть в историю!</p>
@@ -929,7 +953,7 @@
 		<!-- SCREEN 8 -->
 		<section class="screen8 clearfix">
 		 	<div class="layout-positioner">
-				<div class="screen8-left">
+				<div class="screen8-left wow">
 					<h2>Первое в России<br> 
 					реалити-шоу по фотографии</h2>
 					<p>ПИКЧА стала первой фотошколой в стране, кто запустил собственное реалити-шоу по фотографии.</p>
@@ -951,7 +975,7 @@
 						</div>
 					</div>	
 				</div>
-				<div class="screen8-right">
+				<div class="screen8-right wow">
 					<!-- <img src="img/7-screen-6.png" alt="Изображение 6" width="338" height="270"> -->
 				</div> 	
 			</div>
