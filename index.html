@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Фотошкола «ПИКЧА»</title>
-	<link href="styles.css" rel="stylesheet">
-	<link href="animation.css" rel="stylesheet">
+	<title>Международная сеть фотошкол «ПИКЧА»</title>
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/animation.css" rel="stylesheet">
 </head>
 <body>
 	<!-- HEADER -->
@@ -14,7 +15,7 @@
 				<img src="img/1-logo(2).png" alt="Логотип ПИКЧИ" width="306" height="50">
 			</div>
 			<div class="header-right">
-				<button type="button" name="header-right-button" id="header-right-button">Подробнее</button>
+				<button class="button-open" type="button" name="header-right-button" id="header-right-button">Подробнее</button>
 			</div>
 		</nav>
 	</header>
@@ -63,14 +64,14 @@
 						— студийные интенсивы.</p>			
 						<p>Оставьте телефон, и менеджер расскажет подробнее
 						о понравившемся вам курсе.</p>
-						<a href="#dark-background" class="button">Подробнее</a>
-						<div id="dark-background">
-					      	<div id="window-order">
-						      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close" width="16" height="16"></a>
-						        <form name="screen1-form">
-									<input type="text" name="name" id="name" placeholder="Ваше имя" autocomplete="on" tabindex="0" autofocus><br>
-									<input type="tel" name="phone" id="phone" placeholder="Номер моб. телефона" pattern="8[0-9]{10}" tabindex="0" required><br>
-									<input type="submit" name="screen1-right-button" id="screen1-right-button" value="Подробнее"></input>
+						<a class="button button-open">Подробнее</a>
+						<div class="modal">
+					      	<div class="modal__order">
+						      	<a class="order__close--a button-close" aria-label="Закрыть форму заявки"><img class="order__close--img" src="img/button-close-4.png" width="16" height="16"></a>
+						       	<form class="order__form" name="screen1-form" action="http://www.pikcha-photoschool.ru/php/form.php" method="post">
+									<input class="order__form--general form__name" type="text" name="name" placeholder="Ваше имя" autocomplete="on" tabindex="0"><br>
+									<input class="order__form--general form__phone" type="tel" name="phone" placeholder="Номер моб. телефона" pattern="8[0-9]{10}" tabindex="0" required><br>
+									<input class="order__form--general form__submit" type="submit" name="screen1-right-button" value="Подробнее"></input>
 									<div class="agreement">
 										<input type="checkbox" name="agreement" id="agreement" tabindex="0" checked>
 										<label for="agreement" tabindex="0">Отправляя заявку, я даю согласие на обработку персональных данных</label>
@@ -78,7 +79,7 @@
 								</form>
 					     	</div>
 					    </div>
-					</div>			
+					</div>
 				</div>
 				<div class="screen2-right wow">	
 					<img src="img/3-screen-2.png" alt="Изображение 2" width="247" height="500">
@@ -99,21 +100,7 @@
 					<p>Мы понимаем, что обучение будет максимально полезным, когда процесс ориентирован на интересы и пожелания учеников. У вас будет возможность подобрать удобное расписание и посещать занятия именно в те дни и в то время, когда вы можете.</p>
 					<p>Стать профессионалом в определенной сфере вам поможет специализация. Если вы хотите заниматься только свадебной фотографией, вы будете изучать только её.</p>
 					<p>Оставьте имя и телефон, менеджер поможет составить персональную программу.</p>
-					<a href="#dark-background" class="button">Подробнее</a>
-					<div id="dark-background">
-				     	<div id="window-order">
-					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close" width="16" height="16"></a>
-					        <form name="screen1-form">
-								<input type="text" name="name" id="name" placeholder="Ваше имя" autocomplete="on" tabindex="0" autofocus><br>
-								<input type="tel" name="phone" id="phone" placeholder="Номер моб. телефона" pattern="8[0-9]{10}" tabindex="0" required><br>
-								<input type="submit" name="screen1-right-button" id="screen1-right-button" value="Подробнее"></input>
-								<div class="agreement">
-									<input type="checkbox" name="agreement" id="agreement" tabindex="0" checked>
-									<label for="agreement" tabindex="0">Отправляя заявку, я даю согласие на обработку персональных данных</label>
-								</div>
-							</form>					     	
-						</div>
-					</div>
+					<a class="button button-open">Подробнее</a>
 				</div> 
 			</div>	
 		</section>
@@ -128,21 +115,7 @@
 					<p>Только так можно научиться круто фотографировать. Уже на первой встрече вы начнёте делать свои первые снимки в ручном режиме! И все новые знания закрепим серией практических упражнений.</p>
 					<p>Вы прочувствуете на себе, кто такой «профессиональный фотограф». Договоритесь со своей первой моделью, найдёте подходящую локацию и осуществите первую фотосессию.</p>
 					<p>Оставьте имя и телефон, менеджер расскажет подробнее, что будет на практике.</p>
-					<a href="#dark-background" class="button">Подробнее</a>
-					<div id="dark-background">
-				     	<div id="window-order">
-					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close" width="16" height="16"></a>
-					        <form name="screen1-form">
-								<input type="text" name="name" id="name" placeholder="Ваше имя" autocomplete="on" tabindex="0" autofocus><br>
-								<input type="tel" name="phone" id="phone" placeholder="Номер моб. телефона" pattern="8[0-9]{10}" tabindex="0" required><br>
-								<input type="submit" name="screen1-right-button" id="screen1-right-button" value="Подробнее"></input>
-								<div class="agreement">
-									<input type="checkbox" name="agreement" id="agreement" tabindex="0" checked>
-									<label for="agreement" tabindex="0">Отправляя заявку, я даю согласие на обработку персональных данных</label>
-								</div>
-							</form>					     	
-						</div>
-					</div>	
+					<a class="button button-open">Подробнее</a>
 				</div> 
 			 	<div class="screen4-right wow">
 					<img src="img/5-screen-4.png" alt="Изображение 4" width="221" height="500">
@@ -163,21 +136,7 @@
 					<p>Широко известно, что окружение влияет на человека. Поэтому если вы являетесь творческим человеком, вам важно учиться в окружении таких же творческих личностей.</p>
 					<p>В ПИКЧЕ вы найдете тех, кто развивается в том же направлении, что и вы — в фотографии. Здесь вы обретете свою творческую семью. Она станет для вас основой на долгие годы.</p>
 					<p>Оставьте имя и телефон, менеджер познакомит вас с вашей новой группой.</p>
-					<a href="#dark-background" class="button">Подробнее</a>
-					<div id="dark-background">
-				     	<div id="window-order">
-					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close" width="16" height="16"></a>
-					        <form name="screen1-form">
-								<input type="text" name="name" id="name" placeholder="Ваше имя" autocomplete="on" tabindex="0" autofocus><br>
-								<input type="tel" name="phone" id="phone" placeholder="Номер моб. телефона" pattern="8[0-9]{10}" tabindex="0" required><br>
-								<input type="submit" name="screen1-right-button" id="screen1-right-button" value="Подробнее"></input>
-								<div class="agreement">
-									<input type="checkbox" name="agreement" id="agreement" tabindex="0" checked>
-									<label for="agreement" tabindex="0">Отправляя заявку, я даю согласие на обработку персональных данных</label>
-								</div>
-							</form>				     	
-						</div>
-					</div>	
+					<a class="button button-open">Подробнее</a>
 				</div> 	
 			</div>
 		</section>
@@ -192,21 +151,7 @@
 					фотографы с многолетним опытом</h2>
 					<p>Преподаватели фотошколы ПИКЧА никогда не расстаются со своими камерами. Фотография — это их стиль и образ жизни. Одновременно это и профессия, которая позволяет расти и развиваться. И они с удовольствием делятся своим опытом с учениками!</p>
 					<p>Оставьте имя и телефон, менеджер расскажет больше о вашем преподавателе.</p>
-					<a href="#dark-background" class="button">Подробнее</a>
-					<div id="dark-background">
-				     	<div id="window-order">
-					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close" width="16" height="16"></a>
-					        <form name="screen1-form">
-								<input type="text" name="name" id="name" placeholder="Ваше имя" autocomplete="on" tabindex="0" autofocus><br>
-								<input type="tel" name="phone" id="phone" placeholder="Номер моб. телефона" pattern="8[0-9]{10}" tabindex="0" required><br>
-								<input type="submit" name="screen1-right-button" id="screen1-right-button" value="Подробнее"></input>
-								<div class="agreement">
-									<input type="checkbox" name="agreement" id="agreement" tabindex="0" checked>
-									<label for="agreement" tabindex="0">Отправляя заявку, я даю согласие на обработку персональных данных</label>
-								</div>
-							</form>					     	
-						</div>
-					</div>	
+					<a class="button button-open">Подробнее</a>
 				</div>
 				<div class="screen6-right wow">
 					<!-- <img src="img/7-screen-6.png" alt="Изображение 6" width="338" height="270"> -->
@@ -227,21 +172,7 @@
 					<p>Полностью завершив обучение, вы повысите свои навыки в фотографии. У вас наберется большое портфолио с яркими работами и вы точно будете знать, как сделать фотографию своей профессией.</p>
 					<p>Фоторынок России только набирает обороты и многие направления еще не заняты сильными профессионалами. У вас есть возможность попасть в историю!</p>
 					<p>Оставьте телефон, менеджер опишет все возможности, которые откроются вам.</p>
-					<a href="#dark-background" class="button">Подробнее</a>
-					<div id="dark-background">
-				     	<div id="window-order">
-					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close" width="16" height="16"></a>
-					        <form name="screen1-form">
-								<input type="text" name="name" id="name" placeholder="Ваше имя" autocomplete="on" tabindex="0" autofocus><br>
-								<input type="tel" name="phone" id="phone" placeholder="Номер моб. телефона" pattern="8[0-9]{10}" tabindex="0" required><br>
-								<input type="submit" name="screen1-right-button" id="screen1-right-button" value="Подробнее"></input>
-								<div class="agreement">
-									<input type="checkbox" name="agreement" id="agreement" tabindex="0" checked>
-									<label for="agreement" tabindex="0">Отправляя заявку, я даю согласие на обработку персональных данных</label>
-								</div>
-							</form>					     	
-						</div>
-					</div>	
+					<a class="button button-open">Подробнее</a>
 				</div> 	
 			</div>
 		</section>
@@ -257,21 +188,7 @@
 					<p>ПИКЧА стала первой фотошколой в стране, кто запустил собственное реалити-шоу по фотографии.</p>
 					<p>Мы отобрали 15 участников и обучили их искусству фотографии в прямом эфире всего за 3 месяца.</p>
 					<p>Оставьте телефон, менеджер подскажет дату и время первого пробного урока.</p>
-					<a href="#dark-background" class="button">Подробнее</a>
-					<div id="dark-background">
-				     	<div id="window-order">
-					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close" width="16" height="16"></a>
-					        <form name="screen1-form">
-								<input type="text" name="name" id="name" placeholder="Ваше имя" autocomplete="on" tabindex="0" autofocus><br>
-								<input type="tel" name="phone" id="phone" placeholder="Номер моб. телефона" pattern="8[0-9]{10}" tabindex="0" required><br>
-								<input type="submit" name="screen1-right-button" id="screen1-right-button" value="Подробнее"></input>
-								<div class="agreement">
-									<input type="checkbox" name="agreement" id="agreement" tabindex="0" checked>
-									<label for="agreement" tabindex="0">Отправляя заявку, я даю согласие на обработку персональных данных</label>
-								</div>
-							</form>				     	
-						</div>
-					</div>	
+					<a class="button button-open">Подробнее</a>
 				</div>
 				<div class="screen8-right wow">
 					<!-- <img src="img/7-screen-6.png" alt="Изображение 6" width="338" height="270"> -->
@@ -326,22 +243,7 @@
 						</blockquote>
 					</div> 
 				</div>
-
-				<a href="#dark-background" class="button">Подробнее</a>
-				<div id="dark-background">
-			     	<div id="window-order">
-				      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close" width="16" height="16"></a>
-				        <form name="screen1-form">
-							<input type="text" name="name" id="name" placeholder="Ваше имя" autocomplete="on" tabindex="0" autofocus><br>
-							<input type="tel" name="phone" id="phone" placeholder="Номер моб. телефона" pattern="8[0-9]{10}" tabindex="0" required><br>
-							<input type="submit" name="screen1-right-button" id="screen1-right-button" value="Подробнее"></input>
-							<div class="agreement">
-								<input type="checkbox" name="agreement" id="agreement" tabindex="0" checked>
-								<label for="agreement" tabindex="0">Отправляя заявку, я даю согласие на обработку персональных данных</label>
-							</div>
-						</form>				     	
-					</div>
-				</div>
+				<a class="button button-open">Подробнее</a>
 
 			</div>
 		</section>
@@ -360,22 +262,8 @@
 						<li class="icons icon4"><div class="screen10-advantages-4"><h3>Вы получаете сертификат <br>об обучении</h3></div></li>
 						<li class="icons icon5"><div class="screen10-advantages-5"><h3>Есть специализация <br>знаний</h3></div></li>
 					</ul>
-					<a href="#dark-background" class="button">Подробнее</a>
-					<div id="dark-background">
-				     	<div id="window-order">
-					      	<a href="#" aria-label="Закрыть форму заявки"><img src="img/button-close-4.png" class="close" width="16" height="16"></a>
-					        <form name="screen1-form">
-								<input type="text" name="name" id="name" placeholder="Ваше имя" autocomplete="on" tabindex="0" autofocus><br>
-								<input type="tel" name="phone" id="phone" placeholder="Номер моб. телефона" pattern="8[0-9]{10}" tabindex="0" required><br>
-								<input type="submit" name="screen1-right-button" id="screen1-right-button" value="Подробнее"></input>
-								<div class="agreement">
-									<input type="checkbox" name="agreement" id="agreement" tabindex="0" checked>
-									<label for="agreement" tabindex="0">Отправляя заявку, я даю согласие на обработку персональных данных</label>
-								</div>
-							</form>				     	
-						</div>
-					</div>	
-				</div>
+					<a class="button button-open">Подробнее</a>
+					<!-- <a href="#dark-background" class="button">Подробнее</a> -->
 				<div class="screen10-right">
 					<!-- <img src="img/7-screen-6.png" alt="Изображение 6" width="338" height="270"> -->
 				</div> 	
@@ -393,7 +281,7 @@
 					<h2>Запись на бесплатный,<br>
 					пробный урок <span>по фотографии:</span>
 					</h2>
-					<form name="screen1-form">
+					<form name="screen1-form" action="http://www.pikcha-photoschool.ru/php/form.php" method="post">
 						<input type="text" name="name" id="name" placeholder="Ваше имя" autocomplete="on" tabindex="0"><br>
 						<input type="tel" name="phone" id="phone" placeholder="Номер моб. телефона" pattern="8[0-9]{10}" tabindex="0" required><br>
 						<input type="submit" name="screen1-right-button" id="screen1-right-button" value="Подробнее"></input>
@@ -406,7 +294,8 @@
 			</div>
 		</section>
 		<!-- SCREEN 11 -->
-		<script src="wow.min.js"></script>
+		<script src="js/pop-up.js"></script>
+		<script src="js/wow.min.js"></script>
 		<script>new WOW().init();</script>
 	 </main>
 
