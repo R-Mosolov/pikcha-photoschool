@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'BebasNeue-Bold';
+    src: url('BebasNeueBold.eot');
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'),
+    url('BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('BebasNeueBold.woff') format('woff'),
+    url('BebasNeueBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue-Light';
+    src: url('BebasNeueLight.eot');
+    src: local('Bebas Neue Light'), local('BebasNeueLight'),
+    url('BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+    url('BebasNeueLight.woff') format('woff'),
+    url('BebasNeueLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}

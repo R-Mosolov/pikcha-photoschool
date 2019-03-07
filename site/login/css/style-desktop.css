@@ -1,0 +1,121 @@
+.page {
+	margin: 0;
+	padding: 0;
+	height: 1vh;
+	background-color: #fcd94a;
+}
+
+.container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-background__img {
+	max-height: 455px;
+	width: auto;
+	box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.3);
+}
+
+.page-background__h1 {
+	font-family: "BebasNeue-Bold", "Arial", sans-serif;
+	line-height: 60px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 36px;
+	color: white;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.h1__span {
+	font-size: 64px;
+}
+
+.h1__position {
+	position: relative;
+	bottom: 300px;
+}
+
+.form {
+	position: relative;
+	bottom: 245px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	min-height: 360px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.2);
+}
+
+.form__logo--image {
+	position: absolute;
+	margin-top: -40px;
+	border-radius: 50px;
+	border: 8px solid white;
+}
+
+.form__logo--position {
+	max-width: 85px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form__position {
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form__input {
+	font-family: "BebasNeue-Light", "Arial", sans-serif;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #999;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	width: 450px;
+	height: 75px;
+	border-radius: 60px;
+	border: 0;
+	box-sizing: border-box;
+}
+
+.form__input--email:focus,
+.form__input--password:focus {
+	outline: none;
+	border: 2px solid lightblue;
+	box-sizing: border-box;
+}
+
+.form__input--email {
+	margin-top: 45px;
+}
+
+.form__button--submit {
+	padding-top: 10px;
+}
+
+.form__button--submit {
+	font-family: "BebasNeue-Bold", "Arial", sans-serif;
+	color: white;
+	background-color: #33cc66;
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form__remember-me {
+	max-width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.form__label {
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: lighter;
+	font-size: 16px;
+	color: #999;
+}
