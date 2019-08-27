@@ -1,0 +1,103 @@
+.way-right,
+.program-left,
+.practice-right,
+.creators-left {
+    width: 450px;
+    text-align: center;
+}
+
+.background {
+    /*background: url("../img/background-photo-2.png");*/
+    background-size: 50px auto;
+}
+
+.mentors-right {
+    height: 300px;
+    width: 400px;
+    align-content: center;
+    background: url("../../sections/basis/mentors/image.png") no-repeat 50% 100%;
+    background-color: #e7e7e7;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+}
+
+.reality-right {
+    height: 300px;
+    width: 450px;
+    align-content: center;
+    background: url("../../sections/basis/reality/image.png") no-repeat 50% 100%;
+    background-color: #e7e7e7;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+}
+
+.references img {
+    box-shadow:
+            0 15px 0 -10px powderblue,
+            0 -15px 0 -10px lightblue,
+            0 24px 5px -15px navajowhite,
+            0 -22px 5px -15px gold;
+}
+
+.references img {
+    transform: rotate(-3deg);
+}
+
+.trofimova img {
+    transform: rotate(3deg);
+}
+
+.facts h3::before {
+    position: relative;
+    content: "";
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: url("../../sections/basis/facts/sprite.png") no-repeat;
+}
+
+.facts li:nth-child(1) h3::before {
+    margin-left: auto;
+    margin-right: auto;
+    background-position: -50px -49px;
+    width: 128px;
+    height: 129px;
+}
+
+.facts li:nth-child(2) h3::before {
+    margin-left: auto;
+    margin-right: auto;
+    background-position: -201px -51px ;
+    width: 175px;
+    height: 98px;
+}
+
+.facts li:nth-child(3) h3::before {
+    margin-left: auto;
+    margin-right: auto;
+    background-position: -401px -50px ;
+    width: 144px;
+    height: 130px;
+}
+
+.facts li:nth-child(4) h3::before {
+    margin-left: auto;
+    margin-right: auto;
+    background-position: -51px -201px ;
+    width: 148px;
+    height: 109px;
+}
+
+.facts li:nth-child(5) h3::before {
+    margin-left: auto;
+    margin-right: auto;
+    background-position: -250px -201px ;
+    width: 146px;
+    height: 97px;
+}
+
+.facts-advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+    padding-left: 0;
+}

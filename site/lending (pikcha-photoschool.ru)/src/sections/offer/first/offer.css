@@ -1,0 +1,127 @@
+.screen1,
+.screen11 {
+    width: 100%;
+    min-height: 610px;
+    clear: both;
+    margin: 0px 0px -50px 0px;
+    padding-top: 30px;
+    background-repeat: repeat;
+    background-size: 60px 60px;
+    background-position:
+            0 0;
+}
+
+.screen11 {
+    min-height: 630px;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+.screen1-left,
+.screen11-left {
+    width: 490px;
+    float: left;
+}
+
+.screen1-right,
+.screen11-right {
+    width: 700px;
+    float: right;
+    margin-top: 30px;
+}
+
+.screen1 img,
+.screen11 img {
+    position: relative;
+    bottom: -4px;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.screen11 img {
+    margin-top: 30px;
+    bottom: 0px;
+}
+
+h1,
+.screen11 h2 {
+    margin-top: 45px;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 24px;
+    text-align: center;
+    color: gray;
+}
+
+.screen11 h2 {
+    margin-top: 65px;
+}
+
+span {
+    font-weight: bold;
+    color: #fad900;
+}
+
+.form__name,
+.form__phone,
+#name,
+#phone {
+    width: 380px;
+    padding: 12px ;
+    margin-left: 23%;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: gray;
+    box-sizing: border-box;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+}
+
+.form__phone,
+#phone {
+    margin-top: 18px;
+}
+
+#agreement {
+    position: relative;
+    top: -3px;
+    margin-top: 18px;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    font-weight: 300;
+    color: gray;
+}
+
+.form__submit,
+#screen1-right-button {
+    border: 0.5px solid #51b02b;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    font-weight: 300;
+    padding: 12px;
+    background-color: #51b02b;
+    color: white;
+    cursor: pointer;
+    margin-top: 18px;
+    margin-left: 23%;
+    box-shadow:
+            8px 8px 0 -5px rgba(255, 215, 0, 0.9),
+            -8px -8px 0 -5px rgba(135, 206, 250, 0.9);
+    width: 380px;
+}
+
+label {
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: gray;
+}
+
+.agreement {
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

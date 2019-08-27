@@ -1,0 +1,216 @@
+.offer,
+.program,
+.practice,
+.creators,
+.mentors,
+.result,
+.reality,
+.facts {
+    min-height: 600px;
+    width: 100%;
+    clear: both;
+    margin: 0;
+}
+
+.offer-left,
+.program-left,
+.practice-left,
+.creators-left,
+.mentors-left,
+.result-left,
+.reality-left,
+.shlikov-left,
+.trofimova-left,
+.trifonova-left,
+.facts-left {
+    display: block;
+    float: left;
+    position: relative;
+    bottom: -4px;
+    max-width: 510px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.offer-right,
+.program-right,
+.practice-right,
+.creators-right,
+.mentors-right,
+.result-right,
+.reality-right,
+.shlikov-right,
+.trofimova-right,
+.trifonova-right,
+.facts-right {
+    display: block;
+    float: right;
+    position: relative;
+    bottom: -4px;
+    max-width: 510px;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
+.offer-left h2,
+.program-right h2,
+.practice-left h2,
+.creators-right h2,
+.mentors-left h2,
+.result-right h2,
+.reality-left h2,
+.references h2,
+.facts h2 {
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 24px;
+    text-align: center;
+    color: gray;
+}
+
+.references h2 {
+    margin-top: 70px;
+    margin-bottom: -10px;
+}
+
+.facts h2 {
+    padding-top: 50px;
+}
+
+.offer-left p,
+.program-right p,
+.practice-left p,
+.creators-right p,
+.mentors-left p,
+.result-right p,
+.reality-left p,
+.shlikov-right p,
+.trofimova-left p,
+.trifonova-right p {
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 14px;
+    text-align: left;
+    color: gray;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.facts li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.facts h3 {
+    padding: 0;
+    width: 330px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 14px;
+    color: gray;
+}
+
+.shlikov,
+.trofimova,
+.trifonova {
+    margin-bottom: 10px;
+}
+
+.offer,
+.practice,
+.mentors,
+.reality,
+.facts {
+    background-color: #f3f3f3;
+}
+
+.references {
+    min-height: 600px;
+    width: 100%;
+    clear: both;
+    margin: 0;
+}
+
+.references cite,
+.references blockquote,
+.references p {
+    margin-left: 0;
+    font-style: italic;
+}
+
+.button {
+    width: 200px;
+    border: 0 solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Helvetica Neue", "Open Sans", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #51b02b;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.references .button {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.facts .button {
+    margin-bottom: -30px;
+}
+
+.offer-left {
+    margin: 90px 0 0 90px;
+}
+
+.program-right {
+    margin: 80px 80px 0 0;
+}
+
+.practice-left {
+    margin: 100px 0 0 90px;
+}
+
+#header-right-button:hover,
+#screen1-right-button:hover,
+.button:hover {
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    box-shadow: 0 0 25px 0 lightgrey;
+    transform: scale(1.025);
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+
+.layout-positioner {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
