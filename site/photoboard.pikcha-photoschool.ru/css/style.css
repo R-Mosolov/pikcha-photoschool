@@ -1,0 +1,20 @@
+.navbar {
+    background-color: #fad900;
+}
+
+.carousel-item {
+    background-color: lightblue;
+}
+.carousel-item img:nth-child(1) {
+    height: 345px;
+}
+
+h1 {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.66);
+}
+span.brand-style {
+    font-weight: bold;
+    color: #fad900;
+}
