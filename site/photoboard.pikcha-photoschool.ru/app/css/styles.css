@@ -1,0 +1,46 @@
+.container {
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page {
+	margin: 0;
+	padding: 0;
+}
+
+.page-header {
+	height: 75px;
+	background-color: #fcd94a;
+}
+
+.photoboard__h1,
+.ad1__h2,
+.ad2__h2,
+.ad3__h2 {
+	font-family: "Open Sans", "Arial", sans serif;
+}
+
+.ad1__div,
+.ad2__div,
+.ad3__div {
+	width: 500px;
+	height: 200px;
+	background-color: lightgray;
+}
+
+.calculator__retouching--input,
+.calculator__retouching--text {
+	margin: 0;
+	padding: 0;
+}
+
+h2,
+h3,
+label {
+	font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.calculator__position {
+	margin-top: 100px;
+}
