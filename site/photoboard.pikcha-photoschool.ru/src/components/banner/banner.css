@@ -1,0 +1,7 @@
+.carousel-item {
+    background-color: lightblue;
+}
+
+.carousel-item img:nth-child(1) {
+    height: 345px;
+}
