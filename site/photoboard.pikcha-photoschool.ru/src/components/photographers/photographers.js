@@ -2,13 +2,13 @@ import React from 'react';
 
 import OlegVaidner from './img/oleg-vaidner.jpg';
 import Database from './database';
+import createOnePhotographer from './index';
 
 const Photographers = () => {
-
-    let createOnePhotographer = (name, price) => {
+    const createOnePhotographer = (name, price, altName) => {
         return(
-            <div className="card shadow" style={{width: "20rem"}}>
-                <img src={OlegVaidner} className="card-img-top" alt="Олег Вайднер"/>
+            <div className="card shadow mb-5" style={{"width": "350px"}}>
+                <img src={OlegVaidner} className="card-img-top" alt={altName}/>
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">Цена часа (руб.): {price}</p>
@@ -19,17 +19,37 @@ const Photographers = () => {
         )
     };
 
-    let createPhotographersArray = () => {
+    const createPhotographersArray = () => {
         let result = [];
         for (let i = 0; i < Database.length; i++) {
-            result.push(createOnePhotographer(Database[i].name, Database[i].price));
+            result.push(createOnePhotographer(Database[i].name, Database[i].price, Database[i].name));
         }
         return result;
     };
 
+    const filterByName = () => {
+        return(
+            Database.sort(function(a, b) {
+                if (a.name < b.name) {
+                    return -1;
+                } if (a.name > b.name) {
+                    return 1;
+                }
+                return 0;
+            })
+        )
+    };
+
     return(
-        <div className="photographers d-flex justify-content-between mb-5">
-            {createPhotographersArray()}
+        <div>
+            <button
+                className="btn shadow mb-4"
+                onClick={filterByName}>
+                Сортировка по имени
+            </button>
+            <div className="photographers d-flex justify-content-around flex-wrap">
+                {createPhotographersArray()}
+            </div>
         </div>
     )
 };
